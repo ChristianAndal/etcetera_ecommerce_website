@@ -1,0 +1,486 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: rgb(27, 24, 24);
+}
+.innerheader{
+    width: 900px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logo_container h1{
+    color: rgb(0, 255, 170);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: monotype corsiva;
+    font: size 32px;
+}
+.navigation{
+    float: right;
+    height: 100%;
+}
+.navigation li{
+    list-style: none;
+    display: table-cell;
+    float: left;
+    line-height: 100px;
+}
+.navigation a li{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: monotype crosiva;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+}
+.videoheader{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.videoheader h1{
+    text-align: center;
+    font-size: 6rem;
+    font-family: monotype crosiva;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+}
+.video_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.bgcontent{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+.innercontent{
+    width: 900px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: cornsilk;
+    overflow: hidden;
+}
+.imagecontent1{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.imagecontent2 {
+    height: 100%;
+    display: table;
+    float: right;
+} 
+.image3{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn{
+    display: inline-block;
+    background: #fd2508;
+    color: black;
+    padding: 20px 50px;
+    margin: 50px 0;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: monotype crosiva;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.fptitle{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(26, 24, 24);
+}
+.fptitle::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: rgb(12, 11, 11);
+    font-weight: normal;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.col-4 a {
+    color: rgb(0, 0, 0);
+}
+/*FOOTER*/
+footer
+{
+    position: relative;
+    width: 85%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container  h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrightText{
+    width: 85%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+/*/footer*/
+/*img bkg*/
+
+.box1 img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    overflow: hidden;
+}
+.box2 img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    overflow: hidden;
+}
+.box3 img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    overflow: hidden;
+}
+/*info*/
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+
+}
+.app-text p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #807c7c;
+}
+.app-picture {
+    width: 50%;
+    float: right;
+
+}
+.app-picture img {
+    width: 70%;
+    margin-top: -10px;
+    padding-left: 100px;
+}
+/*page*/
+.boxcon {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+}
+.txtc{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #fff;
+
+}
+.text-app{
+    width: 50%;
+    float: right;
+}
+.text-app h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-right: 40px;
+
+}
+.text-app p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+.picad {
+    width: 50%;
+    float: left;
+
+}
+.picad img {
+    width: 100%;
+    margin-top: -20px;
+    padding-right: 50px;
+}
+.stars .fa{
+    color: #ff523b;
+    float: left
+}
+.rating h2 {
+    font-size: 30px;
+    position: relative;
+    color: #fff;
+}
+/*developer*/
+.banner2{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text2 h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+
+}
+.app-text2 p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #1b1818;
+}
+.app-picture1 {
+    width: 50%;
+    float: right;
+
+}
+.app-picture1 img {
+    width: 60%;
+    margin-top: -300px;
+    padding-left: 100px;
+}
+/*faq*/
+.banner3{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+
+}
+.app-text3{
+    width: 50%;
+    float: left;
+}
+.app-text3 h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+
+}
+.app-text3 p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #1b1818;}
+
+    .quickLinks1{
+        position: relative;
+        width: 25%;
+    }
+    .quickLinks1 ul li{
+        list-style: none;
+    }
+    .quickLinks1 ul li a{
+        color: rgb(5, 5, 5);
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .quickLinks1 ul li a:hover{
+        color: #fff;
+    }
