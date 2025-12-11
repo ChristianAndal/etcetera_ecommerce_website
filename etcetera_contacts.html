@@ -1,8 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Et Cetera - Get in touch with our team. We'd love to hear from you!">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> et cetera</title>
+    <title>Contact Us - Et Cetera</title>
 </head>
 <body>
 <div class="header">
@@ -15,38 +19,123 @@
            <a href="etcetera_home.html"><li>Home</li></a>
            <a href="etcetera_store.html"><li>Store</li></a>
            <a href="etcetera_about.html"><li>About</li></a>
-           <a href="etcetera_contacts.html"><li>Developer</li></a>
+           <a href="etcetera_contacts.html"><li>Contact</li></a>
         </ul>
         </nav>
     </div>
 </div>
-<!-----------------bkg--------------->
-<div class="box2">
-    <img src="image/wew2.jpg">
-    <div class="banner2">
-        <div class="app-text2">
-            <h1>Developers Infomation.</h1>
-            <p>The developer of this website is Christian Miguel Andal he is a software developer,<br>
-                 founder and CEO of Intense Time the developer programmed this ecommerce webpage as<br>
-                  a prototype website of the Etcetera business. Christian Andal started an AI company<br>
-                   in his room and started his program at the age of 19 as his first project the Qcode.
-                
 
-             </p>
+<div class="contact-page-container">
+    <div class="contact-hero">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    </div>
+
+    <div class="contact-content">
+        <div class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info-section">
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>E. Rodriguez Ave.,<br>Taytay, Rizal 1920<br>Philippines</p>
             </div>
-            <div class="app-picture1">
-                <img src="image/me.png">
-    
+
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>
+                    <a href="tel:+63956675465">0956675465</a><br>
+                    <a href="tel:+63956675465">0956675465</a>
+                </p>
             </div>
-       
+
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p><a href="mailto:etceteraentrep@gmail.com">etceteraentrep@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="contact-icon">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <h3>Business Hours</h3>
+                <p>
+                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed
+                </p>
+            </div>
+
+            <div class="social-links-card">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/etcetera.2020etc/about/?ref=page_internal" class="social-link facebook" target="_blank" rel="noopener">
+                        <i class="fa fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link twitter" target="_blank" rel="noopener">
+                        <i class="fa fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link instagram" target="_blank" rel="noopener">
+                        <i class="fa fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="developer-section">
+        <div class="developer-card">
+            <h2>Website Developer</h2>
+            <div class="developer-info">
+                <h3>Christian Miguel Andal</h3>
+                <p class="developer-title">Software Developer, Founder & CEO of Intense Time</p>
+                <p class="developer-description">The developer programmed this ecommerce webpage as a prototype website of the Etcetera business. Christian Andal started an AI company in his room and began his programming journey at the age of 19 with his first project, the Qcode.</p>
+            </div>
+        </div>
     </div>
 </div>
- <!----------------footer-------------------->
- <footer>
+
+<footer>
     <div class="container">
         <div class="sec aboutus">
             <h2>About Us</h2>
-            <p>etcetera is a ecommers platform that is under JA entrepreneurship that is run by the students of siena collage of taytay</p>
+            <p>Etcetera is an ecommerce platform that is under JA entrepreneurship that is run by the students of Siena College of Taytay</p>
             <ul class="sci">
                 <li><a href="https://www.facebook.com/etcetera.2020etc/about/?ref=page_internal"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -60,8 +149,8 @@
                 <li><a href="footer/faq.html">FAQ</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Help</a></li>
-                <li><a href="#">Terms & Consitions</a></li>
-                <li><a href="etcetera_contacts.html">Developer</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="etcetera_contacts.html">Contact</a></li>
             </ul>
         </div>
         <div class="sec contact">
@@ -74,13 +163,14 @@
                 </li>
                 <li>
                     <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <p><a herf="tel.0956675465">0956675465</a>
-                        <br><a herf="tel.0956675465">0956675465</a></p>
+                    <span>
+                        <a href="tel:+63956675465">0956675465</a>
+                        <br><a href="tel:+63956675465">0956675465</a>
+                    </span>
                 </li>
                 <li>
-                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    </span>
-                    <p><a href="mailto:etceteraentrep@gmail.com">etceteraentrep@gmail.com</a></p>
+                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    <span><a href="mailto:etceteraentrep@gmail.com">etceteraentrep@gmail.com</a></span>
                 </li>
             </ul>
         </div>
@@ -89,6 +179,5 @@
 <div class="copyrightText">
     <p>Copyright © 2021 et cetera.shop. All Rights Reserved.</p>
 </div>
-<!-----///----------footer-------------------------->
 </body>
 </html>
